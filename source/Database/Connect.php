@@ -6,7 +6,7 @@ use \PDO;
 use \PDOException;
 
 /**
- * MIXTAPE WE ARE PHP
+ * MIXTAP WE ARE PHP
  *
  * @author Tigao Mabango 
  * @package Source\Models

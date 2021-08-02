@@ -3,7 +3,7 @@
 namespace Source\Database;
 
 /**
- * MIXTAPE WE ARE PHP
+ * MIXTAP WE ARE PHP
  *
  * @author Tigao Mabango 
  * @package Source\Database
@@ -15,8 +15,6 @@ abstract class Model
 
     /** @var \PDOException|null */
     protected $fail;
-
-  
 
     /** @var string */
     protected $query;
@@ -300,18 +298,7 @@ abstract class Model
         }
     }
 
-    /**
-     * @return bool
-     */
-    public function destroy(): bool
-    {
-        if (empty($this->id)) {
-            return false;
-        }
-
-        $destroy = $this->delete("id = :id", "id={$this->id}");
-        return $destroy;
-    }
+   
 
     /**
      * @return array|null

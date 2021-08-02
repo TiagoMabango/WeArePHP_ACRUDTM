@@ -41,5 +41,12 @@ echo "<br></br>";
 var_dump($model->find()->limit(3)->order("nome")->fetch(true));
 
 echo "<br></br>";
+
+$id =3;
+if($devs->delete("id = :id","id={$id}")){
+    echo "<p>Dados apagado com Sucessos</p>";
+}
+
+echo "<br></br>";
 var_dump($devs->find()->count());
 

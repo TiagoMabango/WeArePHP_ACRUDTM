@@ -1,0 +1,32 @@
+"ACRUDTM", é um Arquivo que te permite fazer o CRUD de uma forma simples e produtiva!.
+O processo de utilização é o seguinte.
+
+Ela contém duas classes principais: o model e connect.
+
+A Classe connect é onde se prepara a conexão com a BD(Base de dados).
+A Classe model contem a regra de negócio principal para a criação do CRUD, ela contem os seguinte métodos:
+
+1.create-> Cadastra um novo row(linha) na BD(Bade de dados).
+2.find-> faz a pesquisa na BD de uma forma geral, trazendo todos os dados ou selecionando algumas colunas.
+3.findById->faz a pesquisa pelo id na BD
+4.limit->estabelece um número limite de pesquisa de dados.
+5.order-> ordenação dos dados, por tabelas e tudo tipo de filtro de ordenação.
+6.fetch-> ela é um método que se junta aos outros para trazer os dados, ela tem uma particularidade. Quando recebe true traz todos os dados e false apenas um. Por padrão é false.
+7.count-> conta os dados na BD.
+8.delete->apaga os dados na BD.
+9.save-> o método save tem a o seguinte funcionamento, ela Cadastra e tbm actuliaza um determinado dados na BD.
+10.update->atualiza os dados na BD.
+11.filter-> filtra os dados antes de serem salvo.
+12.required-> campos que devem ser preenchido, esse método tem a função de alerta quando o campo não for preenchido.
+13.safe-> faz o tratamento final de filtragem dos dados.
+
+E temos a pasta models, onde fica todos os Arquivo de configuração da TB.
+
+Conhecimentos necessários:
+    1-Saber sobre PDO, não necessário tudo mas o básico. Pelo menos Saber instanciar uma classe.
+    2-Saber sobre autoload(recarregamento automático de classes).
+    3-Saber sobre namespace.
+
+Sobre utilização dos métodos o Arquivo Index tem mais detalhes, e as pastas Models e Database...
+
+Espero que gostem obrigado!
